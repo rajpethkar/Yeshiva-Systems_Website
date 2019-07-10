@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="nav-no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Yeshiva Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	
+	<title>Yeshiva Systems</title>
+	
+	<link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/defaults.min.css">
+    <link rel="stylesheet" href="css/nav-core.min.css">
+    <link rel="stylesheet" href="css/nav-layout.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="Slider/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+	<!-- Image Container-->
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+	<!-- Image -->
+	.responsive {
+		width: 100%;
+		height: 300px;
+	}
+	
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	
+  </style>
+  
+  <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   background-color: white;
+   color: white;
+   text-align: left;
+   }
+   
+   .floating-bar{
+    position: fixed;
+    left:13px;
+    bottom: 13px;
+    z-index: 99999;
+   
+	
+	}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Yeshiva Systems</h1>
+</header>
+<a href="#" class="nav-button">Menu</a>
+<nav class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>     
+    </ul>
+</nav>
+
+<a href="#" class="nav-close">Close Menu</a>
+
+<div style="padding: 50px;">
+  <!-- Swiper --> 
+  <div class="swiper-container" >
+    <div class="swiper-wrapper" >
+      <div class="swiper-slide" >
+		<a href="#"><img src="Slider/images/windows/sliding.png" class="responsive" style="width:auto; height:300px" alt="" title="Sliding" id="wows_0"/></a> 
+	  </div>
+      <div class="swiper-slide">
+		<a href="#"><img src="Slider/images/windows/sliding_high.jpg" class="responsive" style="width:auto;height:300px" alt="" title="Sliding" id="wows_0"/></a> 
+	  </div>  
+		<div class="swiper-slide">
+		<a href="#"><img src="Slider/images/windows/window1.jpg" class="responsive" style="width:auto;height:300px"  alt="" title="Sliding" id="wows_0"/></a> 
+	  </div>  	  
+    </div>
+    <!-- Add Pagination --> 
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows --> 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+ </div>
+
+<div class="desc">
+<h2 class="text-uppercase">
+Windows and Doors
+</h2>
+<p>
+The facade of a building is often the most important aspect from a design standpoint, as it sets the tone for the rest of the building.
+</p>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="Slider/js/swiper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/nav.jquery.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  
+  <script>
+    $('.nav').nav();
+</script>
+
+</body>
+</html>
