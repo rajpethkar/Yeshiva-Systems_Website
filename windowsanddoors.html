@@ -14,52 +14,9 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="Slider/css/swiper.min.css">
 
-  <!-- Demo styles -->
-  <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-	<!-- Image Container-->
-    .swiper-container {
-      width: 100%;
-      height: auto;
-    }
-	<!-- Image -->
-	.responsive {
-		width: 100%;
-		height: 300px;
-	}
-	
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-	
-  </style>
+  <!-- Bootstrap core CSS -->
+    <link href="css/Jssor/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/Jssor/jssor-slider_css.css" rel="stylesheet" />
   
   <style>
 .footer {
@@ -81,6 +38,7 @@
 	}
 </style>
 
+
 </head>
 
 <body>
@@ -97,27 +55,61 @@
 
 <a href="#" class="nav-close">Close Menu</a>
 
-<div style="padding: 50px;">
-  <!-- Swiper --> 
-  <div class="swiper-container" >
-    <div class="swiper-wrapper" >
-      <div class="swiper-slide" >
-		<a href="#"><img src="Slider/images/windows/sliding.png" class="responsive" style="width:auto; height:300px" alt="" title="Sliding" id="wows_0"/></a> 
-	  </div>
-      <div class="swiper-slide">
-		<a href="#"><img src="Slider/images/windows/sliding_high.jpg" class="responsive" style="width:auto;height:300px" alt="" title="Sliding" id="wows_0"/></a> 
-	  </div>  
-		<div class="swiper-slide">
-		<a href="#"><img src="Slider/images/windows/window1.jpg" class="responsive" style="width:auto;height:300px"  alt="" title="Sliding" id="wows_0"/></a> 
-	  </div>  	  
+
+     <!-- Use a container to wrap the slider, the purpose is to enable slider to always fit width of the wrapper while window resize -->
+    <div class="container" style="padding: 10px;">
+       
+        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 442px; overflow: hidden;">
+            
+
+            <!-- #startregion Slides Container -->
+            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;
+            overflow: hidden;">
+                <div style="text-align: center">
+                    <img data-u="image1" style="width:100%;height:100%"  src="img/gallery/corner.jpg" />
+                </div>
+                <div style="text-align: center">
+                    <img data-u="image1" style="width:100%;height:100%" src="img/gallery/corner2.jpg" />
+                </div>
+                <div style="text-align: center">
+                    <img data-u="image1" style="width:100%;height:100%" src="img/gallery/sliding.png" />
+                </div>
+                <div style="text-align: center">
+                    <img data-u="image1" style="width:100%;height:100%" src="img/gallery/sliding_high.jpg" />
+                </div >
+				<div style="text-align: center" >
+                    <img data-u="image1" style="width:100%;height:100%" src="img/gallery/window1.jpg" />
+                </div>
+            </div>
+			<!-- #endregion Slides Container -->
+            
+            <!--#startregion Bullet Navigator Skin End -->
+            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+        
+            <!--#startregion Arrow Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
     </div>
-    <!-- Add Pagination --> 
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows --> 
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
- </div>
+
 
 <div class="desc">
 <h2 class="text-uppercase">
@@ -128,32 +120,18 @@ The facade of a building is often the most important aspect from a design standp
 </p>
 </div>
 
-  <!-- Swiper JS -->
-  <script src="Slider/js/swiper.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/nav.jquery.min.js"></script>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jssor/jquery-1.9.1.min.js"></script>
+    <script src="js/Jssor/bootstrap.min.js"></script>
+    <script src="js/Jssor/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/jssor/ie10-viewport-bug-workaround.js"></script>
 
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-  
-  <script>
-    $('.nav').nav();
-</script>
+    <!-- jssor slider scripts-->
+	 <script type="text/javascript" src="js/jssor/jssor.slider.min.js"></script>
+    <script src="js/jssor/jssor-silder_Script.js"></script>
 
 </body>
 </html>
