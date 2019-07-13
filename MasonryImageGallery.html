@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="nav-no-js">
+
+<head>
+
+
+<style>
+
+body {
+  font-family: sans-serif;
+   margin: 0;
+   background: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  text-align: center;
+  margin-bottom:60px;
+}
+
+h4{
+  text-align:center; 
+  line-height:80px;
+  font-weight:normal;
+
+}
+
+.masonry { /* Masonry container */
+    -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+   margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+	
+}
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    -webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+	
+}
+.item img{
+max-width:100%;
+}
+
+@media only screen and (max-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;		
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+.img {
+    image-orientation: from-image;
+}
+
+modal-content {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s; /* Safari */
+  -webkit-transition-timing-function: linear; /* Safari */
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform 375ms, width 275ms 100ms, height 375ms;
+}
+
+</style>
+
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  
+  
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+};
+
+}
+
+
+</style>
+
+
+</head>
+
+
+ <body >
+ 
+ <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- <img src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> -->
+  <img class="modal-content" id="img01">
+</div>
+
+<h1>Responsive Masonry Grid</h1>
+<p>A pure CSS-only responsive masonry.</p>
+
+<div class="masonry">
+  <div class="item" >
+    1
+    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162445.jpg" />
+  </div>
+  <div class="item" >
+    2
+    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162536.jpg" />
+  </div>
+  <div class="item">
+    3
+    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160558.jpg" >
+  </div>
+  <div class="item">
+    4
+    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160548.jpg" />
+  </div>
+  <div class="item">
+    5
+    <!-- <img class="clsimg" src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> -->
+	<img class="clsimg" src="Facade/Khar/thumbnail/20190710_161129.jpg" />
+  </div>
+  <div class="item">
+    6
+    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" >
+  </div>
+  <div class="item">
+    7
+    <img class="clsimg" src="Facade/Khar/thumbnail/contrail.jpg" />
+  </div>
+  <!-- <div class="item"> -->
+    <!-- 8 -->
+    <!-- <img class="clsimg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- 9 -->
+    <!-- <img class="clsimg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- 10 -->
+    <!-- <img class="clsimg" src="Facade/Khar/20190710_162924.jpg"> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- 11 -->
+    <!-- <img class="clsimg" src="Facade/Khar/20190710_161048.jpg" style="transform:rotate(90deg);"/> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- 12 -->
+    <!-- <img class="clsimg" src="http://www.pixeden.com/media/k2/galleries/640/001-business-card-cardboard-mockup-presentation-wall-free-psd.jpg"> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- 13 -->
+    <!-- <img class="clsimg" src="Facade/Khar/20190709_112937.jpg"> -->
+  <!-- </div> -->
+
+</div>
+
+
+<script>
+<!-- function myzoom(){ -->
+<!-- <!-- alert(this.src); --> -->
+ <!-- modal.style.display = "block"; -->
+ <!-- <!-- var modalImg = document.getElementsByClassName("clsimg")[0]; --> -->
+ <!-- <!-- modalImg.src = this.src; --> -->
+<!-- } -->
+// Get the modal
+var modal = document.getElementById("myModal");
+<!-- alert(modal); -->
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("item");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+
+for (var i=0; i < img.length; i++) {
+	
+    img[i].onclick = function(){
+	<!-- alert(this.getElementsByClassName('clsimg')[0].src); -->
+	var thum_img=this.getElementsByClassName('clsimg')[0].src;
+	var high_img=thum_img.replace("/thumbnail","");
+	<!-- alert(high_img); -->
+	 modal.style.display = "block";  
+	modalImg.src = high_img;<!-- this.getElementsByClassName('clsimg')[0].src; -->
+	<!-- alert(this.getElementsByClassName('clsimg')[0].naturalHeight); -->
+	
+    }
+	
+	
+	<!-- var w = img1.naturalWidth || img1.width, -->
+        <!-- h = img1.naturalHeight || img1.height; -->
+};
+
+<!-- img.onclick = function(){ -->
+<!-- alert('Hi'); -->
+  <!-- modal.style.display = "block"; -->
+  <!-- modalImg.src = this.src; -->
+  <!-- captionText.innerHTML = this.alt; -->
+<!-- } -->
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("img01")[0];
+
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+
+
+</html>
