@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Yeshiva Systems</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Yeshiva Systems</title>
 	
@@ -23,6 +24,8 @@
 	
 	<link rel="stylesheet" href="css/mansory.css">
 	
+	<script src="js/jquery.min.js"></script>
+		
   <style>
 .footer {
    position: fixed;
@@ -61,18 +64,28 @@
 	
 </head>
 
-<body>
+<body id="windows">
 
 <header style="padding-left:30px">
     <h1><img src="Logo/logo.jpg" style="width:30px;height:30px"/>
-	eshiva Systems	
+	ESHIVA SYSTEMS
 	</h1>	
 </header>
 
 <a href="#" class="nav-button">Menu</a>
+
 <nav class="nav">
     <ul>
-        <li><a href="index.html">Home</a></li>     
+        <li><a href="index.html">Home</a></li>
+        <li><a href="windowsanddoors.html">Windows And Doors</a></li>
+		<li><a href="Security.html">Security</a></li>
+        <li class="nav-submenu"><a href="#">IT Information</a>
+            <ul>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+            </ul>
+        </li>       
+        <li><a href="contacts.html">Contact</a></li>
     </ul>
 </nav>
 
@@ -82,10 +95,10 @@
      <!-- Use a container to wrap the slider, the purpose is to enable slider to always fit width of the wrapper while window resize -->
     <div class="container" style="padding: 10px;">
        
-        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 442px; overflow: hidden;">
+        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1200px; height: 300px; overflow: hidden;">
             
             <!-- #startregion Slides Container -->
-            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;overflow: hidden;">
+            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1200px; height: 300px;overflow: hidden;">
                 <div >
 					<!-- <img data-u="image" src="../img/gallery/980x380/001.jpg" /> -->
                     <img data-u="image"  src="Slider/images/windows/corner.jpg" />
@@ -144,10 +157,37 @@
 <div style="padding: 10px;">
 <!-- Start feature Area -->
 		<section class="feature-area">
+			<div class="box effect1 rcorners1 section" >
+				<h4>SLIDING</h4>
+					The syetem is with horizontal opening frames.Modern windows are usually glazed (DGU) or covered in some other transparent or translucent material.
+					</br>
+					<img src='img/Facade/img/sliding.jpg' style="max-width:50%" />	
+			</div>
+			<div class="box effect1 rcorners1 section" >
+			<h4>PIVOTING</h4>
+				The system opens vertically with right, left or center pivot.
+				</br>
+				<img src='img/Facade/img/pivoting.jpg' style="max-width:50%; max-height:50%" />
+			</div>
+			<!-- <div class="box effect1 rcorners1 section"> -->
+				<!-- <h4>PIVOTING</h4> -->
+				<!-- The system opens vertically with right, left or center pivot. -->
+				<!-- </br> -->
+				<!-- <img src='Facade/img/pivoting.jpg' style="max-width:50%; max-height:50%" /> -->
+			<!-- </div> -->
 			<div class="box effect1 rcorners1 section">
-				<h4>Windows And Doors</h4>
+				<h4>GUILLOTINE</h4>
+				The syetem is with two vertically sliding frames.
+				</br>
+				<img src='img/Facade/img/guillotine.jpg' style="max-width:50%;max-height:10%" />
+			</div>
+			<div class="box effect1 rcorners1 section">
+				<h4>TURNABLE CORNER</h4>
 				The facade of a building is often the most important aspect from a design standpoint, as it sets the tone for the rest of the building.
-			</div>			
+				</br>
+				<img src='img/Facade/img/turnable.jpg' style="max-width:50%;max-height:10%" />
+			</div>
+		
 		</section>
 		<!-- End feature Area -->
 </div>
@@ -157,42 +197,68 @@
 <div id="myModal" class="modal">
   <!-- <img src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> -->
   <img class="modal-content" id="img01">
+  <!-- <img src="img/loader.gif" /> -->
 </div>
 
-<div class="masonry">
-  <div class="item" >
-    1
-    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162445.jpg" />
-  </div>
-  <div class="item" >
-    2
-    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162536.jpg" />
-  </div>
-  <div class="item">
-    3
-    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160558.jpg" >
-  </div>
-  <div class="item">
-    4
-    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160548.jpg" />
-  </div>
-  <div class="item">
-    5
-    <!-- <img class="clsimg" src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> -->
-	<img class="clsimg" src="Facade/Khar/thumbnail/20190710_161129.jpg" />
-  </div>
-  <div class="item">
-    6
-    <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" >
-  </div>
-  <div class="item">
-    7
-    <img class="clsimg" src="Facade/Khar/thumbnail/contrail.jpg" />
-  </div>
+
+<div class="section" style="padding-left: 20px">
+<h4>Actual site images</h4>
+</div>
+
+<div class="masonry " id="divimage" >
+  
+  <!-- <div class="item" > -->
+    <!-- <!-- 1 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162445.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item" > -->
+    <!-- <!-- 2 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162536.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 3 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160558.jpg" > -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 4 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160548.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 5 --> 
+    <!-- <!-- <img class="clsimg" src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> --> 
+	<!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161129.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 6 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
+  <!-- </div> -->
+   <!-- <div class="item"> -->
+    <!-- <!-- 6 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
+  <!-- </div> -->
+
+</div>
+
 
 </body>
 
+<script>
+var divimage = document.getElementById('divimage');
+var d=divimage.innerHTML;
+for(i = 1; i <= 24; i++){
+	images = "img/Facade/Khar/thumbnail/"+i+".jpg";
+	var s='<div class="item"><img class="clsimg" src="'+images+'" /></div>'
+	d=d+s
+}
+divimage.innerHTML=d;
+</script>
+
 <!-- IMPORTANT PALCE SCRIPT AT END ELSE IT WILL NOT WORK -->
 <script src="js/mansory.js"></script>
+
+<script src="js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
 
 </html>

@@ -10,6 +10,7 @@
 
     <title>Yeshiva Systems</title>
 
+	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/defaults.min.css">
     <link rel="stylesheet" href="css/nav-core.min.css">
@@ -56,6 +57,12 @@
 						</a>
 						&nbsp&nbsp&nbsp&nbsp
 						<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>
+					</div>
+					<div>
+						<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
+						<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
+						<textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+						<button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button>
 					</div>
 				</div>
 				</div>

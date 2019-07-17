@@ -25,7 +25,10 @@
     <![endif]-->
 
     <script src="js/rem.min.js"></script>
-
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/nav.jquery.min.js"></script>
+	
 <style>
 .footer {
    position: fixed;
@@ -46,6 +49,7 @@
 </style>
 
 
+
 </head>
 
 <body>
@@ -55,7 +59,7 @@
 
 <header style="padding-left:30px">
     <h1><img src="Logo/logo.jpg" style="width:30px;height:30px"/>
-	eshiva Systems	
+	ESHIVA SYSTEMS	
 	</h1>	
 </header>
 
@@ -63,9 +67,9 @@
 
 <nav class="nav">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="windowsanddoors.html">Windows And Doors</a></li>
-		<li><a href="#">Security</a></li>
+		<li><a href="Security.html">Security</a></li>
         <li class="nav-submenu"><a href="#">IT Information</a>
             <ul>
                 <li><a href="#">Hardware</a></li>
@@ -87,7 +91,7 @@
 				The facade of a building is often the most important aspect from a design standpoint, as it sets the tone for the rest of the building.
 			</div>
 			<div class="box effect1 rcorners1 section">
-				<h4>Security</h4>
+				<h4><a style="text-decoration: none;color: inherit;" href="Security.html" >Security</a></h4>
 				Security hardware includes doors, locks, alarm systems, lighting, motion detectors, security camera systems, etc.
 			</div>
 			<div class="box effect1 rcorners1 section">
@@ -98,10 +102,10 @@
 		<!-- End feature Area -->	
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/nav.jquery.min.js"></script>
-<script>
-    $('.nav').nav();
-</script>
 </body>
+
+	<script>
+		$('.nav').nav();
+	</script>
+	
 </html>

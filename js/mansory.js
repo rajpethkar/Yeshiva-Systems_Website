@@ -44,5 +44,12 @@ var span = document.getElementsByClassName("img01")[0];
 
 // When the user clicks on <span> (x), close the modal
 modal.onclick = function() { 
+	
+	 // var Page = document.getElementById('windows');
+    // var zoom =  '100%'
+    // Page.style.zoom = zoom;
+	// alert(Page.id+zoom);
+ 
   modal.style.display = "none";
+  
 }
