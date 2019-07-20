@@ -3,34 +3,52 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-
-    <title>Yeshiva Systems</title>
-
-	<link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.min.css">
+   <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Yeshiva Systems</title>
+	
+	<!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
     <link rel="stylesheet" href="css/defaults.min.css">
     <link rel="stylesheet" href="css/nav-core.min.css">
     <link rel="stylesheet" href="css/nav-layout.min.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="Slider/css/swiper.min.css">
+	
+	<!-- BOX effect -->
+	<link rel="stylesheet" href="css/Box.css">
+	
+  <!-- Bootstrap core CSS -->
+    <link href="css/Jssor/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/Jssor/jssor-slider_css.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="css/mansory.css">
+	
+	<script src="js/jquery.min.js"></script>
 
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="css/ie8-core.min.css">
-    <link rel="stylesheet" href="css/ie8-layout.min.css">
-    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
 
-    <script src="js/rem.min.js"></script>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/Jssor/jquery-1.9.1.min.js"></script>
+    <script src="js/Jssor/bootstrap.min.js"></script>
+    <script src="js/Jssor/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/Jssor/ie10-viewport-bug-workaround.js"></script>
 
-
+    <!-- jssor slider scripts-->
+	 <script type="text/javascript" src="js/Jssor/jssor.slider.min.js"></script>
+    <script src="js/Jssor/jssor-silder_Script.js"></script>
+	
 </head>
 
 <body>
 
-<header>
-    <h1>Yeshiva Systems</h1>
+<header style="padding-left:30px">
+    <h1><img src="Logo/logo.jpg" style="width:30px;height:30px"/>
+	ESHIVA SYSTEMS
+	</h1>	
 </header>
 
 <a href="#" class="nav-button">Menu</a>
@@ -38,12 +56,33 @@
 <nav class="nav">
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="windowsanddoors.html">Windows And Doors</a></li>
+		<li><a href="Security.html">Security</a></li>
+        <li class="nav-submenu"><a href="#">IT Information</a>
+            <ul>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+            </ul>
+        </li>       
+        <li><a href="contacts.html">Contact</a></li>
     </ul>
 </nav>
 
 <a href="#" class="nav-close">Close Menu</a>
 
+ <!-- The Modal -->
+<div id="myModal" class="modal">
 
+ <div  class="floating-bar1" style="display:block">
+						<a href="tel:9892352579">
+							<img style="-webkit-user-select: none;width:50px;height:50px" src="img/tel.png">
+						</a>
+						&nbsp&nbsp&nbsp&nbsp
+						<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>
+						
+					</div>
+ 
+</div>
 
 <div style="padding: 10px;">
 	<!-- Start feature Area -->
@@ -56,14 +95,18 @@
 							<img style="-webkit-user-select: none;width:50px;height:50px" src="img/tel.png">
 						</a>
 						&nbsp&nbsp&nbsp&nbsp
-						<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>
+						<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>						
 					</div>
-					<div>
-						<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
-						<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
-						<textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-						<button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button>
-					</div>
+					
+					<!-- <!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+  
+					<!-- <div> -->
+						<!-- <input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text"> -->
+						<!-- <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email"> -->
+						<!-- <textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea> -->
+						<!-- <button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> -->
+					<!-- </div> -->
 				</div>
 				</div>
 			</div>
@@ -72,7 +115,36 @@
 	
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("modal")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
 <script src="js/nav.jquery.min.js"></script>
 <script>
     $('.nav').nav();

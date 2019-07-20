@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" class="nav-no-js">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-
-    <title>Yeshiva Systems</title>
-
-    <link rel="stylesheet" href="css/normalize.min.css">
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Yeshiva Systems</title>
+	
+	<link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/defaults.min.css">
     <link rel="stylesheet" href="css/nav-core.min.css">
     <link rel="stylesheet" href="css/nav-layout.min.css">
-
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="Slider/css/swiper.min.css">
+	
 	<!-- BOX effect -->
 	<link rel="stylesheet" href="css/Box.css">
 	
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="css/ie8-core.min.css">
-    <link rel="stylesheet" href="css/ie8-layout.min.css">
-    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-
-    <script src="js/rem.min.js"></script>
+  <!-- Bootstrap core CSS -->
+    <link href="css/Jssor/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/Jssor/jssor-slider_css.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="css/mansory.css">
 	
 	<script src="js/jquery.min.js"></script>
-	<script src="js/nav.jquery.min.js"></script>
-	
-<style>
+		
+  <style>
 .footer {
    position: fixed;
    left: 0;
@@ -44,26 +40,37 @@
     left:13px;
     bottom: 13px;
     z-index: 99999;
-    
+   
+	
 	}
 </style>
 
 
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/Jssor/jquery-1.9.1.min.js"></script>
+    <script src="js/Jssor/bootstrap.min.js"></script>
+    <script src="js/Jssor/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/Jssor/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jssor slider scripts-->
+	 <script type="text/javascript" src="js/Jssor/jssor.slider.min.js"></script>
+    <script src="js/Jssor/jssor-silder_Script.js"></script>
+
 
 </head>
 
-<body>
-
-<div>
-<a href="#" class="nav-button">Menu</a>
+<body id="windows">
 
 <header style="padding-left:30px">
     <h1><img src="Logo/logo.jpg" style="width:30px;height:30px"/>
-	ESHIVA SYSTEMS	
+	ESHIVA SYSTEMS
 	</h1>	
 </header>
 
-</div>
+<a href="#" class="nav-button">Menu</a>
 
 <nav class="nav">
     <ul>
@@ -82,8 +89,7 @@
 
 <a href="#" class="nav-close">Close Menu</a>
 
-
-<div style="padding: 10px;">
+<div  class="container"  style="padding: 10px;">
 	<!-- Start feature Area -->
 		<section class="feature-area">
 			<div class="box effect1 rcorners1 section">
@@ -102,10 +108,13 @@
 		<!-- End feature Area -->	
 </div>
 
+
+
 </body>
 
-	<script>
-		$('.nav').nav();
-	</script>
-	
+<script src="js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+
 </html>
