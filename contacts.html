@@ -9,6 +9,12 @@
 	
 	<title>Yeshiva Systems</title>
 	
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Helvetica&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+	
 	<!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
     <link rel="stylesheet" href="css/defaults.min.css">
     <link rel="stylesheet" href="css/nav-core.min.css">
@@ -37,6 +43,103 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/Jssor/ie10-viewport-bug-workaround.js"></script>
 	
+	<script type="text/javascript"> 
+       function hideLoading() { 
+            document.getElementById('divLoading').style.display = "none"; 
+            document.getElementById('divFrameHolder').style.display = "block"; 
+        } 
+    </script> 
+	
+<style>
+	
+body{
+	background-color:#F9F9F9;
+}
+
+.para{
+	font-family: "Crete Round script=all rev=1", "Adobe Blank"; font-weight: 500;font-size:1.1em;font-style: italic;
+}
+
+.myheader{
+	font-family: "Lato","sans-serif","Crete Round script=all rev=1;font-size:3em";	
+}
+
+	<!-- /* Clear floats after the columns */ -->
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color:#F9F9F9;
+}
+.column:after{
+	background-color:#F9F9F9;
+}
+
+<!-- /* recommended for mobile */ -->
+@media screen and (min-width : 360px) and (max-width:640px) {
+     .column{
+		width:100%;					
+	 }
+	 
+	 .imgcls{
+		height:150px;
+		object-fit:content;		
+	 }
+	 .divpadding{
+		padding:0px;
+		text-align:center;
+	 }
+	
+}
+
+
+<!-- /* For 1024 Resolution Laptop */ -->
+@media screen and (min-width : 641px) and (max-width:1366px) {
+    .column{
+		width:50%;
+		height:50%;
+		display:inline-block;
+		
+	 }
+	 .divpadding{
+		padding:50px;
+	 }
+	 
+	 .imgcls{
+		width:350px;
+		height:300px;
+		object-fit:content;		
+	 }
+	 .iconpos{
+		position:absolute;margin-top:50px;
+	 }
+}
+
+<!-- /* Desktop */ -->
+@media only screen and (min-width: 1370px) and (max-width: 1605px) {
+    .column{
+		width:50%;
+		height:50%;;
+		display:inline-block;
+		
+	 }
+	 .divpadding{
+		padding:100px;
+	 }
+	 
+	 .imgcls{
+		width:350px;
+		height:300px;
+		object-fit:content;
+	 }
+	 .iconpos{
+		position:absolute;margin-top:90px;
+	 }
+	 
+}
+
+	</style>
+
 </head>
 
 <body>
@@ -68,49 +171,62 @@
 
 <a href="#" class="nav-close">Close Menu</a>
 
- <!-- The Modal -->
-<div id="myModal" class="modal">
 
- <div  class="floating-bar1" style="display:block">
-						<a href="tel:9892352579">
-							<img style="-webkit-user-select: none;width:50px;height:50px" src="img/tel.png">
-						</a>
-						&nbsp&nbsp&nbsp&nbsp
-						<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>
-						
-					</div>
- 
+
+<div class="row">
+  <div class="column" style="text-align:center;">	
+	<a href="tel:9892352579" class="iconpos">
+		<img style="-webkit-user-select: none;width:50px;height:50px" src="img/tel.png">
+	</a>
+  </div>
+  <div class="column" style="float:right;vertical-align: top;">	
+	<div class="divpadding">  
+		<h3><a style="text-decoration: none;color: #2F528F;" href="#" >CONTACTS</a></h3>
+		<p class="para">Rajesh PETHKAR (+91-9892352579)</p>
+	</div>
+  </div>  
 </div>
 
-<div style="padding: 10px;">
-	<!-- Start feature Area -->
-		<section class="feature-area">
-			<div class="container">
-				<div class="row pt-100">
-				<div class="col-lg-4">
-					<div  class="floating-bar1" style="display:block">
-						<a href="tel:9892352579">
-							<img style="-webkit-user-select: none;width:50px;height:50px" src="img/tel.png">
-						</a>
-						&nbsp&nbsp&nbsp&nbsp
-						<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>						
-					</div>
-					
-					<!-- <!-- Trigger/Open The Modal -->
-<!-- <button id="myBtn">Open Modal</button> -->
+<div class="row">
+ <div class="column" style="text-align: center;">	
+	<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579" class="iconpos"><img src="img/whatsapp.png" alt="Yeshiva Systems"></a>	
+  </div>
+  <div class="column" style="float:right;vertical-align: top;">	
+	<div class="divpadding">  
+		<h3><a style="text-decoration: none;color: #2F528F;" href="#" >WHATSAPP</a></h3>
+		<p class="para">Rajesh PETHKAR (+91-9892352579)</p>
+	</div>
+  </div>
+</div>
   
-					<!-- <div> -->
-						<!-- <input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text"> -->
-						<!-- <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email"> -->
-						<!-- <textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea> -->
-						<!-- <button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> -->
-					<!-- </div> -->
-				</div>
-				</div>
-			</div>
-		</section>
-		<!-- End feature Area -->
+<div class="row">
+ <div class="column" style="text-align: center;">	
+	<img class="iconpos" src="img/Contacts/email.png" style="-webkit-user-select: none;width:50px;height:50px">
+  </div>
+  <div class="column" style="float:right;vertical-align: top;">	
+	<div class="divpadding">  
+		<h3><a style="text-decoration: none;color: #2F528F;" href="#" >EMAIL</a></h3>
+		<p class="para">rajesh.pethkar@yeshiva-systems.com</p>
+	</div>
+  </div>
+</div>
+
+<div class="row">
+ <div class="column" style="text-align: center;">	
+	<img src="img/Contacts/map.png" style="width:50px;height:50px;" class="iconpos">
+  </div>
+  <div class="column" style="float:right;vertical-align: top;">	
+  
+	<div class="divpadding">  
+		<h3><a style="text-decoration: none;color: #2F528F;" href="#" >MAP</a></h3>	
+		<p class="para">F-192, Express Zone, Goregaon(E), Mum-400063</p>
+		<div id="divLoading"> 
+			<img src="img/Contacts/loading-map.gif" alt="" /> 
+		</div> 		
+		<iframe onload="hideLoading()" width="300" height="250" src="https://maps.google.com/maps?q=express%20zone%20mall%20goregaon%20east&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" alt="Loading map..."></iframe>
+	</div>
 	
+  </div>
 </div>
 
 <script src="js/nav.jquery.min.js"></script>
