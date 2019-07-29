@@ -46,6 +46,101 @@
 </style>
 
 
+<style>
+ body{
+	background-color:#F9F9F9;
+  }
+  .wrapper>div{
+	background-color:#F9F9F9;
+  }
+  
+  .para{
+	font-family: "Crete Round script=all rev=1", "Adobe Blank"; font-weight: 500;font-size:1.1em;font-style: italic;
+}
+
+
+.myimg{
+text-align: center;
+}
+
+<!-- /* recommended for mobile */ -->
+@media screen and (min-width : 360px) and (max-width:640px) {
+ .wrapper{
+display:grid;
+grid-template-columns:1fr;
+}
+
+.wrapper>div{
+
+padding:1em;
+}
+
+.wrapper >div:nth-child(odd){
+
+}
+
+.heading{
+text-align: center;
+}
+.para{
+text-align: center;
+}
+
+}
+	
+<!-- /* For 1024 Resolution Laptop */ -->
+@media screen and (min-width : 641px) and (max-width:1366px) {
+ .wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.wrapper>div{
+padding:1em;	
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+vertical-align:middle;
+display: table-cell;
+}
+
+}
+
+<!-- /* Desktop */ -->
+@media only screen and (min-width: 1370px) and (max-width: 1605px) {
+.wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.wrapper>div{
+padding:1em;
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+
+}
+
+}
+
+</style>
+
+
+
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -154,42 +249,43 @@
         <!-- Jssor Slider End -->
     </div>
 
-<div style="padding: 10px;">
-<!-- Start feature Area -->
-		<section class="feature-area">
-			<div class="box effect1 rcorners1 section" >
-				<h4>SLIDING</h4>
-					The syetem is with horizontal opening frames.Modern windows are usually glazed (DGU) or covered in some other transparent or translucent material.
-					</br>
-					<img src='img/Facade/img/sliding.jpg' style="max-width:50%" />	
-			</div>
-			<div class="box effect1 rcorners1 section" >
-			<h4>PIVOTING</h4>
-				The system opens vertically with right, left or center pivot.
-				</br>
-				<img src='img/Facade/img/pivoting.jpg' style="max-width:50%; max-height:50%" />
-			</div>
-			<!-- <div class="box effect1 rcorners1 section"> -->
-				<!-- <h4>PIVOTING</h4> -->
-				<!-- The system opens vertically with right, left or center pivot. -->
-				<!-- </br> -->
-				<!-- <img src='Facade/img/pivoting.jpg' style="max-width:50%; max-height:50%" /> -->
-			<!-- </div> -->
-			<div class="box effect1 rcorners1 section">
-				<h4>GUILLOTINE</h4>
-				The syetem is with two vertically sliding frames.
-				</br>
-				<img src='img/Facade/img/guillotine.jpg' style="max-width:50%;max-height:10%" />
-			</div>
-			<div class="box effect1 rcorners1 section">
-				<h4>TURNABLE CORNER</h4>
-				The facade of a building is often the most important aspect from a design standpoint, as it sets the tone for the rest of the building.
-				</br>
-				<img src='img/Facade/img/turnable.jpg' style="max-width:50%;max-height:10%" />
-			</div>
-		
-		</section>
-		<!-- End feature Area -->
+
+<div class="wrapper">
+<div class="myimg">
+<img src='img/Facade/img/sliding.jpg' style="width:50%; " />
+</div>
+
+<div >
+<h3 class="heading">SLIDING</h3>
+<p class="para">The syetem is with horizontal opening frames.Modern windows are usually glazed (DGU) or covered in some other transparent or translucent material.</p>
+</div>
+
+<div class="myimg ">
+<img src='img/Facade/img/pivoting.jpg' style="max-width:50%;"/>
+</div>
+
+<div>
+<h3 class="heading">PIVOTING</h3>
+<p class="para box2">The system opens vertically with right, left or center pivot.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/guillotine.jpg' style="max-width:50%;" />
+</div>
+
+<div>
+<h3 class="heading">GUILLOTINE</h3>
+<p class="para">The syetem is with two vertically sliding frames.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/turnable.jpg' style="max-width:50%;" />
+</div>
+
+<div>
+<h3 class="heading">TURNABLE CORNER</h3>
+<p class="para">The facade of a building is often the most important aspect from a design standpoint, as it sets the tone for the rest of the building.</p>
+</div>
 </div>
 
 

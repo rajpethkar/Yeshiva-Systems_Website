@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="nav-no-js">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Yeshiva Systems</title>
+	
+	<link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/defaults.min.css">
+    <link rel="stylesheet" href="css/nav-core.min.css">
+    <link rel="stylesheet" href="css/nav-layout.min.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="Slider/css/swiper.min.css">
+	
+	<!-- BOX effect -->
+	<link rel="stylesheet" href="css/Box.css">
+	
+  <!-- Bootstrap core CSS -->
+    <link href="css/Jssor/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/Jssor/jssor-slider_css.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="css/mansory.css">
+	
+	<script src="js/jquery.min.js"></script>
+		
+  <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   background-color: white;
+   color: white;
+   text-align: left;
+   }
+   
+   .floating-bar{
+    position: fixed;
+    left:13px;
+    bottom: 13px;
+    z-index: 99999;
+   
+	
+	}
+</style>
+
+
+<style>
+ body{
+	background-color:#F9F9F9;
+  }
+  .wrapper>div{
+	background-color:#F9F9F9;
+  }
+  
+  .para{
+	font-family: "Crete Round script=all rev=1", "Adobe Blank"; font-weight: 500;font-size:1.1em;font-style: italic;
+}
+
+
+.myimg{
+text-align: center;
+}
+
+<!-- /* recommended for mobile */ -->
+@media screen and (min-width : 360px) and (max-width:640px) {
+ .wrapper{
+display:grid;
+grid-template-columns:1fr;
+}
+
+.wrapper>div{
+
+padding:1em;
+}
+
+.wrapper >div:nth-child(odd){
+
+}
+
+.heading{
+text-align: center;
+}
+.para{
+text-align: center;
+}
+
+}
+	
+<!-- /* For 1024 Resolution Laptop */ -->
+@media screen and (min-width : 641px) and (max-width:1366px) {
+ .wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.wrapper>div{
+padding:1em;	
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+vertical-align:middle;
+display: table-cell;
+}
+
+}
+
+<!-- /* Desktop */ -->
+@media only screen and (min-width: 1370px) and (max-width: 1605px) {
+.wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.wrapper>div{
+padding:1em;
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+
+}
+
+}
+
+</style>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/Jssor/jquery-1.9.1.min.js"></script>
+    <script src="js/Jssor/bootstrap.min.js"></script>
+    <script src="js/Jssor/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/Jssor/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jssor slider scripts-->
+	 <script type="text/javascript" src="js/Jssor/jssor.slider.min.js"></script>
+    <script src="js/Jssor/jssor-silder_Script.js"></script>
+
+
+</head>
+
+<body id="windows">
+
+<header style="padding-left:30px">
+<a href="index.html" style="text-decoration: none;color: inherit;">
+    <h1><img src="Logo/logo.jpg" style="width:30px;height:30px"/>
+	ESHIVA SYSTEMS
+	</h1>	
+</a>
+</header>
+
+<a href="#" class="nav-button">Menu</a>
+
+<nav class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="windowsanddoors.html">Windows And Doors</a></li>
+		<li><a href="Security.html">Security</a></li>
+        <li class="nav-submenu"><a href="#">IT Information</a>
+            <ul>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+            </ul>
+        </li>       
+        <li><a href="contacts.html">Contact</a></li>
+    </ul>
+</nav>
+
+<a href="#" class="nav-close">Close Menu</a>
+
+
+     <!-- Use a container to wrap the slider, the purpose is to enable slider to always fit width of the wrapper while window resize -->
+    <div class="container" style="padding: 10px;">
+       
+        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1200px; height: 300px; overflow: hidden;">
+            
+            <!-- #startregion Slides Container -->
+            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1200px; height: 300px;overflow: hidden;">
+                <div >
+					<!-- <img data-u="image" src="../img/gallery/980x380/001.jpg" /> -->
+                    <img data-u="image"  src="Slider/images/hardware/rack.png" />
+                </div>
+                <div >
+                    <img data-u="image"  src="Slider/images/hardware/blade.png" />
+                </div>
+                <div >
+                    <img data-u="image"  src="Slider/images/hardware/tower.png" />
+                </div>                
+            </div>
+			<!-- #endregion Slides Container -->
+            
+            <!--#startregion Bullet Navigator Skin End -->
+            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+        
+            <!--#startregion Arrow Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
+    </div>
+
+
+<div class="wrapper">
+
+<div class="myimg">
+<img src='img/ITSoftware/Hardware/rack.png' style="width:50%; " />
+</div>
+<div >
+<h3 class="heading">Rack Server</h3>
+<p class="para">Rack-mounted serverare built specifically to be mounted within a server rack, built for general-purpose that can be configured to support a wide range of requirements.</p>
+</div>
+
+<div class="myimg ">
+<img src='img/ITSoftware/Hardware/tower.png' style="max-width:50%;"/>
+</div>
+<div>
+<h3 class="heading">Tower Server</h3>
+<p class="para box2">Standalone upright cabinet computer server having advantage of easier cooling and scalability.</p>
+</div>
+
+<div class="myimg ">
+<img src='img/ITSoftware/Hardware/blade.png' style="max-width:50%;"/>
+</div>
+<div>
+<h3 class="heading">Blade Server</h3>
+<p class="para box2">A blade server is a modular server that allows multiple servers to be housed in a smaller area, they are slim physically.</p>
+</div>
+
+</div>
+
+ <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- <img src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> -->
+  <img class="modal-content" id="img01">
+  <!-- <img src="img/loader.gif" /> -->
+</div>
+
+
+</body>
+
+
+<!-- IMPORTANT PALCE SCRIPT AT END ELSE IT WILL NOT WORK -->
+<script src="js/mansory.js"></script>
+
+<script src="js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+
+</html>
