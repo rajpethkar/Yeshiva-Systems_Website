@@ -47,101 +47,6 @@
 </style>
 
 
-<style>
- body{
-	background-color:#F9F9F9;
-  }
-  .wrapper>div{
-	background-color:#F9F9F9;
-  }
-  
-  .para{
-	font-family: "Crete Round script=all rev=1", "Adobe Blank"; font-weight: 500;font-size:1.1em;font-style: italic;
-}
-
-
-.myimg{
-text-align: center;
-}
-
-<!-- /* recommended for mobile */ -->
-@media screen and (min-width : 360px) and (max-width:640px) {
- .wrapper{
-display:grid;
-grid-template-columns:1fr;
-}
-
-.wrapper>div{
-
-padding:1em;
-}
-
-.wrapper >div:nth-child(odd){
-
-}
-
-.heading{
-text-align: center;
-}
-.para{
-text-align: center;
-}
-
-}
-	
-<!-- /* For 1024 Resolution Laptop */ -->
-@media screen and (min-width : 641px) and (max-width:1366px) {
- .wrapper{
-display:grid;
-grid-template-columns:1fr 1fr;
-grid-gap:1em;
-justify-items:stretch;
-align-items:stretch;
-}
-
-.wrapper>div{
-padding:1em;	
-}
-
-.wrapper >div:nth-child(odd){
-}
-
-.box2{
-text-align:left;
-vertical-align:middle;
-display: table-cell;
-}
-
-}
-
-<!-- /* Desktop */ -->
-@media only screen and (min-width: 1370px) and (max-width: 1605px) {
-.wrapper{
-display:grid;
-grid-template-columns:1fr 1fr;
-grid-gap:1em;
-justify-items:stretch;
-align-items:stretch;
-}
-
-.wrapper>div{
-padding:1em;
-}
-
-.wrapper >div:nth-child(odd){
-}
-
-.box2{
-text-align:left;
-
-}
-
-}
-
-</style>
-
-
-
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -246,59 +151,55 @@ text-align:left;
         <!-- Jssor Slider End -->
     </div>
 
-
-
-<div class="wrapper">
-
-<div class="myimg" >
-	<div class="masonry" id="divCamera" ></div>
-</div>
-<div >
-	<h3 class="heading">SURVEILLANCE CAMERA</h3>
-	<p class="para">360° Security Solution for your Home and Office.</p>
-</div>
-
-<div class="myimg" >
-	<div class="masonry" id="divHomeAutomation" ></div>
-</div>
-<div>
-	<h3 class="heading">HOME AUTOMATION</h3>
-	<p class="para box2">Home automation is building automation for a home. A home automation system will control lighting, climate, entertainment systems, and appliances. It may also include home security such as access control and alarm systems.When connected with the Internet, home devices are an important constituent of the Internet of Things.</p>
-</div>
-
-<div class="myimg">
-	<div class="masonry" id="divX-Ray" ></div>
-</div>
-<div>
-	<h3 class="heading">X-RAY INSPECTION SYSTEMS</h3>
-	<p class="para">Rapid inspection of the packing baggage and goods. The equipment can store any number of high‐definition images and has an automatic alarm function for the dangerous goods and drugs, operator training function, hazardous goods.</p>
-</div>
-
-<div class="myimg">
-	<div class="masonry" id="divBiometrics" ></div>
-</div>
-<div>
-	<h3 class="heading">BIOMETRICS</h3>
-	<p class="para">A biometric device is a security identification and authentication device. Such devices use automated methods of verifying or recognising the identity of a living person based on a physiological or behavioral characteristic. These characteristics include fingerprints, facial images, iris and voice recognition.</p>
-</div>
-
-<div class="myimg">
-	<div class="masonry" id="divFullStiles" ></div>
-</div>
-<div>
-	<h3 class="heading">FULL HEIGHT TURN STILES</h3>
-	<p class="para">The full-height turnstile is a larger version of the turnstile which eliminates the possibility (inherent in the waist-high style) of someone jumping over the turnstile.</p>
-</div>
-
-<div class="myimg">
-	<div class="masonry" id="divOthers" ></div>
-</div>
-<div>
-<h3 class="heading">TURNSTILE</h3>
-<p class="para">A turnstile, also called a baffle gate or turnstyle, is a form of gate which allows one person to pass at a time. It can also be made so as to enforce one-way traffic of people, and in addition, it can restrict passage only to people who insert a coin, a ticket, a pass, or similar.</p>
+<div style="padding: 10px;">
+<!-- Start feature Area -->
+		<section class="feature-area">
+			<div class="box effect1 rcorners1 section" >
+				<h4>SURVEILLANCE CAMERA</h4>
+					360° Security Solution for your Home and Office.
+					</br>
+					<div class="masonry" id="divCamera" ></div>
+			</div>
+			<div class="box effect1 rcorners1 section" >
+			<h4>HOME AUTOMATION</h4>
+				Home automation is building automation for a home. A home automation system will control lighting, climate, entertainment systems, and appliances. It may also include home security such as access control and alarm systems.When connected with the Internet, home devices are an important constituent of the Internet of Things.
+				</br>
+				<div class="masonry " id="divHomeAutomation" ></div>
+			</div>
+			<!-- <div class="box effect1 rcorners1 section"> -->
+				<!-- <h4>PIVOTING</h4> -->
+				<!-- The system opens vertically with right, left or center pivot. -->
+				<!-- </br> -->
+				<!-- <img src='Facade/img/pivoting.jpg' style="max-width:50%; max-height:50%" /> -->
+			<!-- </div> -->
+			<div class="box effect1 rcorners1 section">
+				<h4>X-RAY INSPECTION SYSTEMS</h4>
+				Rapid inspection of the packing baggage and goods. The equipment can store any number of high‐definition images and has an automatic alarm function for the dangerous goods and drugs, operator training function, hazardous goods.
+				</br>
+				<div class="masonry " id="divX-Ray" ></div>				
+			</div>
+			<div class="box effect1 rcorners1 section">
+				<h4>BIOMETRICS</h4>
+				A biometric device is a security identification and authentication device. Such devices use automated methods of verifying or recognising the identity of a living person based on a physiological or behavioral characteristic. These characteristics include fingerprints, facial images, iris and voice recognition.
+				</br>
+				<div class="masonry " id="divBiometrics" ></div>
+			</div>
+			<div class="box effect1 rcorners1 section">
+				<h4>FULL HEIGHT TURN STILES</h4>
+				The full-height turnstile is a larger version of the turnstile which eliminates the possibility (inherent in the waist-high style) of someone jumping over the turnstile.
+				</br>				
+				<div class="masonry " id="divFullStiles" ></div>
+			</div>
+			<div class="box effect1 rcorners1 section">
+				<h4>TURNSTILE</h4>
+				A turnstile, also called a baffle gate or turnstyle, is a form of gate which allows one person to pass at a time. It can also be made so as to enforce one-way traffic of people, and in addition, it can restrict passage only to people who insert a coin, a ticket, a pass, or similar.
+				</br>				
+				<div class="masonry " id="divOthers" ></div>
+			</div>
+		</section>
+		<!-- End feature Area -->
 </div>
 
-</div>
 
  <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -312,17 +213,46 @@ text-align:left;
 <!-- <h4>Actual site images</h4> -->
 <!-- </div> -->
 
-<div class="masonry1 " id="divimage" ></div>
+<div class="masonry1 " id="divimage" >
+  
+  <!-- <div class="item" > -->
+    <!-- <!-- 1 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162445.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item" > -->
+    <!-- <!-- 2 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162536.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 3 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160558.jpg" > -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 4 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160548.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 5 --> 
+    <!-- <!-- <img class="clsimg" src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> --> 
+	<!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161129.jpg" /> -->
+  <!-- </div> -->
+  <!-- <div class="item"> -->
+    <!-- <!-- 6 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
+  <!-- </div> -->
+   <!-- <div class="item"> -->
+    <!-- <!-- 6 --> 
+    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
+  <!-- </div> -->
+
+</div>
 
 
 </body>
 
-
 <script>
-
-displayImages('divCamera',4,"img/Security/Cameras/");
 displayImages('divHomeAutomation',1,"img/Security/HomeAutomation/");
-
+displayImages('divCamera',4,"img/Security/Cameras/");
 displayImages('divX-Ray',2,"img/Security/X-RAY INSPECTION/");
 displayImages('divBiometrics',2,"img/Security/Biometrics/");
 displayImages('divFullStiles',2,"img/Security/FullStiles/");
