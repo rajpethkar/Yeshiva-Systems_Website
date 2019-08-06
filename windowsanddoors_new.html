@@ -28,6 +28,10 @@
 	<script src="js/jquery.min.js"></script>
 		
   <style>
+  body{
+  font-family: Arial;
+  }
+  
 .footer {
    position: fixed;
    left: 0;
@@ -48,99 +52,57 @@
 </style>
 
 
+
 <style>
- body{
-	background-color:#F9F9F9;
-  }
-  .wrapper>div{
-	background-color:#F9F9F9;
-  }
-  
-  .para{
-	font-family: "Crete Round script=all rev=1", "Adobe Blank"; font-weight: 500;font-size:1.1em;font-style: italic;
-}
 
-
-.myimg{
-text-align: center;
-}
-
-<!-- /* recommended for mobile */ -->
-@media screen and (min-width : 360px) and (max-width:640px) {
- .wrapper{
-display:grid;
-grid-template-columns:1fr;
-}
-
-.wrapper>div{
-
-padding:1em;
-}
-
-.wrapper >div:nth-child(odd){
-
-}
-
-.heading{
-text-align: center;
-}
-.para{
-text-align: center;
-}
-
-}
-	
-<!-- /* For 1024 Resolution Laptop */ -->
-@media screen and (min-width : 641px) and (max-width:1366px) {
- .wrapper{
-display:grid;
-grid-template-columns:1fr 1fr;
-grid-gap:1em;
-justify-items:stretch;
-align-items:stretch;
-}
-
-.wrapper>div{
-padding:1em;	
-}
-
-.wrapper >div:nth-child(odd){
-}
-
-.box2{
-text-align:left;
-vertical-align:middle;
-display: table-cell;
-}
-
-}
-
-<!-- /* Desktop */ -->
-@media only screen and (min-width: 1370px) and (max-width: 1605px) {
 .wrapper{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:1fr;
 grid-gap:1em;
+grid-auto-rows:minmax(50px,auto);
 justify-items:stretch;
 align-items:stretch;
 }
 
-.wrapper>div{
-padding:1em;
-}
+.box1{
+/* align-self:start; */
+grid-column:1;
+grid-row:1/10;
+border:1px solid #333;
+background-color:red;
 
-.wrapper >div:nth-child(odd){
 }
 
 .box2{
-text-align:left;
+/* align-self:end; */
+grid-column:1;
+grid-row:7/10;
+border:1px solid #333;
+background: rgba(0, 0, 0, 0.5);
+z-index:999;
 
 }
 
+
+.box3{
+/* align-self:end; */
+grid-column:1/6;
+grid-row:10/20;
+border:1px solid #333;
+}
+
+.box4{
+/* align-self:end; */
+grid-column:5/7;
+grid-row:13/18;
+border:1px solid #333;
+}
+
+.content {
+  color: #f1f1f1;
 }
 
 </style>
-
 
 
 <!-- Bootstrap core JavaScript
@@ -254,42 +216,25 @@ text-align:left;
 
 
 <div class="wrapper">
-<div class="myimg">
-<img src='img/Facade/img/sliding.jpg' style="width:50%; " />
+	<div class="box1">
+		<img src="img/Facade/img/sliding.jpg" style="width:100%">
+		<!-- <video autoplay muted loop id="myVideo" style="width:60%" > -->
+		<!-- <source src="BlackBuilding.mp4" type="video/mp4"> -->
+		<!-- </video> -->
+	</div>
+
+
+	<div class="box2">
+		<div class="content">
+		<h1>SLIDING</h1>
+		<p>The syetem is with horizontal opening frames.Modern windows are usually glazed (DGU) or covered in some other transparent or translucent material.</p>
+		</div>
+	</div>
+	
 </div>
 
-<div >
-<h3 class="heading">SLIDING</h3>
-<p class="para">The syetem is with horizontal opening frames.Modern windows are usually glazed (DGU) or covered in some other transparent or translucent material.</p>
-</div>
 
-<div class="myimg ">
-<img src='img/Facade/img/pivoting.jpg' style="max-width:50%;"/>
-</div>
 
-<div>
-<h3 class="heading">PIVOTING</h3>
-<p class="para box2">The system opens vertically with right, left or center pivot.</p>
-</div>
-
-<div class="myimg">
-<img src='img/Facade/img/guillotine.jpg' style="max-width:50%;" />
-</div>
-
-<div>
-<h3 class="heading">GUILLOTINE</h3>
-<p class="para">The syetem is with two vertically sliding frames.</p>
-</div>
-
-<div class="myimg">
-<img src='img/Facade/img/turnable.jpg' style="max-width:50%;" />
-</div>
-
-<div>
-<h3 class="heading">TURNABLE CORNER</h3>
-<p class="para">The facade of a building is often the most important aspect from a design standpoint, as it sets the tone for the rest of the building.</p>
-</div>
-</div>
 
 
  <!-- The Modal -->
@@ -305,37 +250,7 @@ text-align:left;
 </div>
 
 <div class="masonry " id="divimage" >
-  
-  <!-- <div class="item" > -->
-    <!-- <!-- 1 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162445.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item" > -->
-    <!-- <!-- 2 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162536.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 3 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160558.jpg" > -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 4 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160548.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 5 --> 
-    <!-- <!-- <img class="clsimg" src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> --> 
-	<!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161129.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 6 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
-  <!-- </div> -->
-   <!-- <div class="item"> -->
-    <!-- <!-- 6 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
-  <!-- </div> -->
-
+ 
 </div>
 
 
