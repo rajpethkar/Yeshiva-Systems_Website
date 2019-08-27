@@ -11,7 +11,6 @@ var modal = document.getElementById("myModal");
 var img = document.getElementsByClassName("item");
 
 var modalImg = document.getElementById("img01");
-var modalAnchor = document.getElementById("ida");
 var captionText = document.getElementById("caption");
 
 
@@ -21,8 +20,9 @@ for (var i=0; i < img.length; i++) {
 	<!-- alert(this.getElementsByClassName('clsimg')[0].src); -->
 	var thum_img=this.getElementsByClassName('clsimg')[0].src;
 	var high_img=thum_img.replace("/thumbnail","");
-	modal.style.display = "block";  
-	modalImg.src = high_img;
+	<!-- alert(high_img); -->
+	 modal.style.display = "block";  
+	modalImg.src = high_img;<!-- this.getElementsByClassName('clsimg')[0].src; -->
 	<!-- alert(this.getElementsByClassName('clsimg')[0].naturalHeight); -->
 	
     }

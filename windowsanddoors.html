@@ -176,7 +176,7 @@ text-align:left;
         <li><a href="index.html">Home</a></li>
         <li><a href="windowsanddoors.html">Windows And Doors</a></li>
 		<li><a href="Security.html">Security</a></li>
-		<li><a href="#">Stalls</a></li>
+		<li><a href="Stalls.html">Exhibition Solutions</a></li>
         <li class="nav-submenu"><a href="#">IT Information</a>
             <ul>
                 <li><a href="Hardware.html">Hardware</a></li>
@@ -300,42 +300,18 @@ text-align:left;
   <!-- <img src="img/loader.gif" /> -->
 </div>
 
+<div class="section" style="padding-left: 20px">
+<h4>Cross Sections</h4>
+</div>
+
+<div class="masonry " id="divcrosssection" >
+</div>
 
 <div class="section" style="padding-left: 20px">
 <h4>Actual site images</h4>
 </div>
 
 <div class="masonry " id="divimage" >
-  
-  <!-- <div class="item" > -->
-    <!-- <!-- 1 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162445.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item" > -->
-    <!-- <!-- 2 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_162536.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 3 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160558.jpg" > -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 4 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_160548.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 5 --> 
-    <!-- <!-- <img class="clsimg" src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> --> 
-	<!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161129.jpg" /> -->
-  <!-- </div> -->
-  <!-- <div class="item"> -->
-    <!-- <!-- 6 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
-  <!-- </div> -->
-   <!-- <div class="item"> -->
-    <!-- <!-- 6 --> 
-    <!-- <img class="clsimg" src="Facade/Khar/thumbnail/20190710_161956.jpg" > -->
-  <!-- </div> -->
 
 </div>
 
@@ -351,6 +327,16 @@ for(i = 1; i <= 24; i++){
 	d=d+s
 }
 divimage.innerHTML=d;
+
+var divcross = document.getElementById('divcrosssection');
+var d1=divcross.innerHTML;
+for(i = 1; i <= 5; i++){
+	images1 = "img/Facade/img/sections/"+i+".png";
+	var s1='<div class="item"><img class="clsimg" src="'+images1+'" /></div>'
+	d1=d1+s1
+}
+divcross.innerHTML=d1;
+
 </script>
 
 <!-- IMPORTANT PALCE SCRIPT AT END ELSE IT WILL NOT WORK -->
