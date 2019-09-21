@@ -42,8 +42,7 @@
     left:13px;
     bottom: 13px;
     z-index: 99999;
-   
-	
+   	
 	}
 </style>
 
@@ -88,6 +87,13 @@ text-align: center;
 text-align: center;
 }
 
+#myVideo
+{
+width:350px;
+margin-left: 20px;
+}
+
+
 }
 	
 <!-- /* For 1024 Resolution Laptop */ -->
@@ -113,6 +119,12 @@ vertical-align:middle;
 display: table-cell;
 }
 
+#myVideo
+{
+margin-left: 20px;
+}
+
+
 }
 
 <!-- /* Desktop */ -->
@@ -137,6 +149,11 @@ text-align:left;
 
 }
 
+#myVideo
+{
+margin-left: 20px;
+}
+
 }
 
 </style>
@@ -156,6 +173,12 @@ text-align:left;
 	 <script type="text/javascript" src="js/Jssor/jssor.slider.min.js"></script>
     <script src="js/Jssor/jssor-silder_Script.js"></script>
 
+	<script type="text/javascript"> 
+       function hideLoading() { 
+            document.getElementById('divLoading').style.display = "none"; 
+        } 
+    </script> 
+	
 
 </head>
 
@@ -253,12 +276,13 @@ text-align:left;
         <!-- Jssor Slider End -->
     </div>
 
+<p class="para"><B>*Windows/Doors available in aluminium and timber</B></p>
 
 <div class="wrapper">
+
 <div class="myimg">
 <img src='img/Facade/img/sliding.png' style="width:50%; " />
 </div>
-
 <div >
 <h3 class="heading">SLIDING</h3>
 <p class="para">The syetem is with horizontal opening frames.Modern windows are usually glazed (DGU) or covered in some other transparent or translucent material.</p>
@@ -267,7 +291,6 @@ text-align:left;
 <div class="myimg ">
 <img src='img/Facade/img/pivoting.png' style="height:200px;"/>
 </div>
-
 <div>
 <h3 class="heading">PIVOTING</h3>
 <p class="para box2">The system opens vertically with right, left or center pivot.</p>
@@ -276,7 +299,6 @@ text-align:left;
 <div class="myimg">
 <img src='img/Facade/img/guillotine.png' style="height:150px;"/>
 </div>
-
 <div>
 <h3 class="heading">GUILLOTINE</h3>
 <p class="para">The syetem is with two vertically sliding frames.</p>
@@ -285,11 +307,62 @@ text-align:left;
 <div class="myimg">
 <img src='img/Facade/img/turnable.png' style="max-width:50%;" />
 </div>
-
 <div>
 <h3 class="heading">TURNABLE CORNER</h3>
 <p class="para">The solution optimize space allowing more space for passageway.</p>
 </div>
+
+<div class="myimg">
+<img src='img/Facade/img/Awning.png' style="height:150px;" />
+</div>
+<div>
+<h3 class="heading">Awning</h3>
+<p class="para">Awning are hinged on the top and open outward from the bottom, allowing for ventilation and protection from the rain.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/Casement.png' style="height:150px;" />
+</div>
+<div>
+<h3 class="heading">Casement</h3>
+<p class="para">A casement is a window/door that is attached to its frame by one or more hinges at the side. They are used singly or in pairs within a common frame, in which case they are hinged on the outside. Casement windows are often held open using a casement stay.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/Double_Hung.png' style="height:150px;" />
+</div>
+<div>
+<h3 class="heading">Double Hung</h3>
+<p class="para">Double-Hung have two operating sash that move up and down allowing for ventilation on the top, bottom or both.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/Bifold.png' style="height:150px;" />
+</div>
+<div>
+<h3 class="heading">Bifold</h3>
+<p class="para">Bifold systems allow for any living or working area to be expanded to include an unobstructed view of the outdoors.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/Louvre.png' style="height:150px;" />
+</div>
+<div>
+<h3 class="heading">Louvre</h3>
+<p class="para">Louvre windows/door is a window/door blind or shutter with horizontal slats that are angled to admit light and air, but to keep out rain and direct sunshine. The angle of the slats may be adjustable, usually in blinds and windows, or fixed.</p>
+</div>
+
+<div class="myimg">
+<img src='img/Facade/img/coating.png' style="height:150px;" />
+</div>
+<div>
+<h3 class="heading">Anodized or Powder Coating</h3>
+<p class="para">Powder coating: economical, longest lasting, and most color-durable quality finishes available on virtually any type of metal
+<BR/>
+Anodized coating: A fairly simple process that's used to protect an aluminum surface from undue damage and wear, anodizing aluminum adds a protective coating of aluminum oxide to the metal itself
+</p>
+</div>
+
 </div>
 
 
@@ -299,6 +372,19 @@ text-align:left;
   <img class="modal-content" id="img01">
   <!-- <img src="img/loader.gif" /> -->
 </div>
+
+<div class="section" style="padding-left: 20px">
+<h4>Sliding Door</h4>
+</div>
+
+<div id="divLoading"> 
+	<img src="img/loader.gif" alt="" /> 
+</div> 	
+
+<video autoplay muted loop id="myVideo" onloadstart="hideLoading()" >
+  <source src="img/Facade/img/sliding.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
 <div class="section" style="padding-left: 20px">
 <h4>Cross Sections</h4>
