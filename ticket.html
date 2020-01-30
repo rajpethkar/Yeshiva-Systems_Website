@@ -51,11 +51,9 @@
             document.getElementById('divFrameHolder').style.display = "block"; 
         } 
     </script> 
-
-
-
+	
 <style>
-
+	
 body{
 	background-color:#F9F9F9;
 }
@@ -68,74 +66,82 @@ body{
 	font-family: "Lato","sans-serif","Crete Round script=all rev=1;font-size:3em";	
 }
 
-<!-- /* Clear floats after the columns */ -->
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  background-color:#F9F9F9;
-}
-.column:after{
-	background-color:#F9F9F9;
-}
-
-
-
 
 <!-- /* recommended for mobile */ -->
 @media screen and (min-width : 360px) and (max-width:640px) {
-
-.wrapper{
+ .wrapper{
 display:grid;
 grid-template-columns:1fr;
-gri-auto-rows:minmax(100px;auto);
-
 }
 
 .wrapper>div{
-background:#F9F9F9;
+
 padding:1em;
 }
 
+.wrapper >div:nth-child(odd){
+
 }
 
+.heading{
+text-align: Left;
+}
+.para{
+text-align: Left;
+}
+
+}
+	
 <!-- /* For 1024 Resolution Laptop */ -->
 @media screen and (min-width : 641px) and (max-width:1366px) {
-
-.wrapper{
+ .wrapper{
 display:grid;
-grid-template-columns:1fr 1fr;
-gri-auto-rows:minmax(100px;auto);
-
+grid-template-columns:1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
 }
 
 .wrapper>div{
-background:#F9F9F9;
-padding:1em;
+padding:1em;	
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+vertical-align:middle;
+display: table-cell;
 }
 
 }
 
 <!-- /* Desktop */ -->
 @media only screen and (min-width: 1370px) and (max-width: 1605px) {
-
 .wrapper{
 display:grid;
-grid-template-columns:1fr 1fr;
-gri-auto-rows:minmax(100px;auto);
-
+grid-template-columns:1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
 }
 
 .wrapper>div{
-background:#F9F9F9;
 padding:1em;
 }
 
+.wrapper >div:nth-child(odd){
+}
 
+.box2{
+text-align:left;
 
 }
 
-</style>
+}
+
+	</style>
 
 </head>
 
@@ -170,51 +176,18 @@ padding:1em;
 
 <a href="#" class="nav-close">Close Menu</a>
 
-
 <div class="wrapper">
 
-<div>
-<div style="text-align:center">
-	<img src="img/tel.png" style="width:40px"/>
-	<div style="text-align:center">
-	<a href="tel:02228732925" style="Display:none;"><p class="para"> Landline (022-28732925)</p></a>
-	<a href="tel:9892352579"><p class="para"> Rajesh Pethkar (+91-9892352579)</p></a>
-	<a href="tel:9920233676" style="Display:none;"><p class="para"> Umesh Kumar (+91-9920233676)</p></a>
-	</div>
-</div>
-
-<div style="text-align:center">
-	<img src="img/whatsapp.png" />
-	<div style="text-align:center">
-	<a href="whatsapp://send?text=Hi%20&amp;phone=+919892352579" class="iconpos"><p class="para">Rajesh Pethkar (+91-9892352579)</p></a>
-	<a href="whatsapp://send?text=Hi%20&amp;phone=+919167232925" style="Display:none;" class="iconpos"><p class="para">Umesh Kumar (+91-9920233676)</p></a>
-	</div>
-</div>
-
-
-<div style="text-align:center">
-	<img src="img/Contacts/email.png" style="width:40px"/>
-	<div style="text-align:center">
-	<p class="para">rajesh.pethkar@yeshiva-systems.com</p>
-	<p class="para" style="Display:none;">umesh.kumar@yeshiva-systems.com</p>
-	</div>
-</div>
-
-</div>
-
-
-<div style="text-align:center;Display:none;">
-	<p class="para">F-192, Express Zone, Goregaon(E), Mum-400063</p>
-	<div id="divLoading"> 
-	<img src="img/Contacts/loading-map.gif" alt="" /> 
-	</div> 		
-	<iframe onload="hideLoading()" width="300" height="250" src="https://maps.google.com/maps?q=express%20zone%20mall%20goregaon%20east&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" alt="Loading map..."></iframe>
-</div>
-
-<div style="text-align:center">
-	<p class="para">A-701, Silver Oak, Beverly Park</p>
-</div>
-
+	<form action="/email2.php" method="post" id="nameform" enctype="multipart/form-data">
+		<div >
+			<textarea id="txtmessage"  rows="10" cols="30" name="msg_message"></textarea>		
+			<BR/>
+			Select a file: <input type="file" name="photo">
+		</div>
+	</form>
+	
+	<button type="submit" form="nameform" value="Submit">Submit</button>
+	
 </div>
 
 
