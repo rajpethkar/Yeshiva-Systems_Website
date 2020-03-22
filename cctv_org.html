@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="nav-no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Yeshiva Systems</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Yeshiva Systems</title>
+	
+	<link rel="shortcut icon" type="image/png" href="Logo/logo_black.png"/>
+	
+	<link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/defaults.min.css">
+    <link rel="stylesheet" href="css/nav-core.min.css">
+    <link rel="stylesheet" href="css/nav-layout.min.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="Slider/css/swiper.min.css">
+	
+	<!-- BOX effect -->
+	<link rel="stylesheet" href="css/Box.css">
+	
+  <!-- Bootstrap core CSS -->
+    <link href="css/Jssor/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/Jssor/jssor-slider_css.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="css/mansory.css">
+	
+	<script src="js/jquery.min.js"></script>	
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   background-color: white;
+   color: white;
+   text-align: left;
+   }
+   
+   .floating-bar{
+    position: fixed;
+    left:13px;
+    bottom: 13px;
+    z-index: 99999;
+   
+	
+	}
+</style>
+
+
+<style>
+ body{
+	background-color:#F9F9F9;
+  }
+  .wrapper>div{
+	background-color:#F9F9F9;
+  }
+  
+  .para{
+	font-family: "Crete Round script=all rev=1", "Adobe Blank"; font-weight: 500;font-size:1.1em;font-style: italic;
+}
+
+
+.myimg{
+text-align: center;
+}
+
+<!-- /* recommended for mobile */ -->
+@media screen and (min-width : 360px) and (max-width:640px) {
+ .wrapper{
+display:grid;
+grid-template-columns:1fr;
+}
+
+.wrapper>div{
+
+padding:1em;
+}
+
+.wrapper >div:nth-child(odd){
+
+}
+
+.heading{
+text-align: center;
+}
+.para{
+text-align: center;
+}
+
+}
+	
+<!-- /* For 1024 Resolution Laptop */ -->
+@media screen and (min-width : 641px) and (max-width:1366px) {
+ .wrapper{
+display:grid;
+grid-template-columns:1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.nested{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.wrapper>div{
+padding:1em;	
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+vertical-align:middle;
+display: table-cell;
+}
+
+}
+
+<!-- /* Desktop */ -->
+@media only screen and (min-width: 1370px) and (max-width: 1605px) {
+.wrapper{
+display:grid;
+grid-template-columns:1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.nested{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:1em;
+justify-items:stretch;
+align-items:stretch;
+}
+
+.wrapper>div{
+padding:1em;
+}
+
+.wrapper >div:nth-child(odd){
+}
+
+.box2{
+text-align:left;
+
+}
+
+}
+
+</style>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/Jssor/jquery-1.9.1.min.js"></script>
+    <script src="js/Jssor/bootstrap.min.js"></script>
+    <script src="js/Jssor/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/Jssor/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jssor slider scripts-->
+	 <script type="text/javascript" src="js/Jssor/jssor.slider.min.js"></script>
+    <script src="js/Jssor/jssor-silder_Script.js"></script>
+
+	<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	
+</head>
+
+<body id="windows">
+
+<header style="padding-left:30px">
+<a href="index.html" style="text-decoration: none;color: inherit;">
+    <h1><img src="Logo/logo_white.png" style="width:30px;height:30px"/>
+	ESHIVA SYSTEMS
+	</h1>	
+</a>
+</header>
+
+<a href="#" class="nav-button">Menu</a>
+
+<nav class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="windowsanddoors.html">Windows And Doors</a></li>
+		<li><a href="Security.html">Security</a></li>
+		<li><a href="Stalls.html">Exhibition Solutions</a></li>
+        <li class="nav-submenu" style="display:none"><a href="#">IT Information</a>
+            <ul>
+                <li><a href="Hardware.html">Hardware</a></li>
+                <li><a href="Software.html">Software</a></li>
+            </ul>
+        </li>       
+		<li><a href="AboutUS.html">About US</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+    </ul>
+</nav>
+
+<a href="#" class="nav-close">Close Menu</a>
+
+
+     <!-- Use a container to wrap the slider, the purpose is to enable slider to always fit width of the wrapper while window resize -->
+    <div class="container" style="padding: 10px;">
+       
+	   
+		
+				
+		<div id="accordion" class="wrapper" >
+			<a data-toggle="collapse" href="#collapseOne">
+				  Collapsible Group Item #1
+			</a>
+			<div  id="collapseOne" class="collapse1 nested" data-parent="#accordion">
+				<div class="myimg">
+					<img src="img/Security/Cameras/BasicDome.png" style="height:200px">
+				</div>
+				<div >
+					<h3 class="heading">DOME CAMERA</h3>
+					<p class="para">
+						The most basic type of dome camera.
+						<br/>				
+						3-axis viewing angle (adjusted manually)
+					</p>
+				</div>
+			
+			</div>
+		
+		<a data-toggle="collapse" href="#collapseOne2">
+				  Collapsible Group Item #1
+			</a>
+		<div  id="collapseOne2" class="collapse1 nested" data-parent="#accordion">
+			<div class="myimg">
+				<img src="img/Security/Cameras/dome.png" style="height:200px">
+			</div>
+			<div>
+				<h3 class="heading">
+					INFRA-RED(IR) DOME CAMERA
+				</h3>
+				<p class="para box2">
+					Infra-red illuminator(LED). 3-axis viewing Angle (adjusted manually)
+				</p>
+			</div>
+		</div>
+
+		<div class="myimg">
+			<img src="img/Security/Cameras/Varifocal.png" style="height:200px">
+		</div>
+		<div>
+			<h3 class="heading">
+				VARIFOCAL INFRA-RED(IR) DOME CAMERA
+			</h3>
+			<p class="para">
+				Manual zoom via Varifocal lens. Infra-red illuminator (LED).3-axis viewing Angle (adjusted manually)
+			</p>
+		</div>
+
+		<div class="myimg">
+			<img src="img/Security/Cameras/motorized.png" style="height:150px">
+		</div>
+		<div>
+			<h3 class="heading">
+				MOTERIZED PAN INFRA-RED(IR) DOME CAMERA
+			</h3>
+			<p class="para">
+				Infra-red illuminator(LED). 3-axis viewing Angle (adjusted manually). Motorized horizontal movement(pan). Programmable patrol preset points.
+			</p>
+		</div>
+
+		<div class="myimg">
+			<img src="img/Security/Cameras/box.png" style="height:150px">
+		</div>
+		<div>
+			<h3 class="heading">
+			C/CS-MOUNT BOX CAMERA
+			</h3>
+			<p class="para">
+				Replaceable C-mount or CS-mount lens. Motorized/Auto Iris(aperture). 
+			</p>
+		</div>
+
+		<div class="myimg">
+			<img src="img/Security/Cameras/minibullet.png" style="height:200px">
+		</div>
+		<div>
+		<h3 class="heading">
+			INFRA-RED(IR) MINI BULLET CAMERA
+		</h3>
+		<p class="para">
+			Infra-red illuminator(LED). Outdoor housing with "Ingress Protection" rating of IP66/ip67(dust & water resistant)
+		</p>
+		</div>		
+		
+		<div class="myimg">
+			<img src="img/Security/Cameras/varifocal-bullet.png" style="height:200px">
+		</div>
+		<div>
+		<h3 class="heading">
+			VARIFOCAL INFRA-RED(IR) BULLET CAMERA
+		</h3>
+		<p class="para">
+			Manual zoom via varifocal lens, Infra-red illuminator(LED) with "Ingress Protection" rating of IP66/IP67(dust & water resistant)
+		</p>
+		</div>
+		
+		<div class="myimg">
+			<img src="img/Security/Cameras/MOTORIZED_VARIFOCAL.png" style="height:150px">
+		</div>
+		<div>
+		<h3 class="heading">
+			MOTORIZED VARIFOCAL INFRA-RED(IR) BULLET CAMERA
+		</h3>
+		<p class="para">
+			Motorized zoom view. Long range infra-red illuminator (LED). Outdoor housing with "Ingress Protection" rating of IP66/IP67(dust & water resistant)
+		</p>
+		</div>
+		
+		<div class="myimg">
+			<img src="img/Security/Cameras/ptzspeeddome.png" style="height:200px">
+		</div>
+		<div>
+		<h3 class="heading">
+			PAN-TILT-ZOOM(PTZ)SPEED DOME CAMERA
+		</h3>
+		<p class="para">
+			High speed motor for Horizontal (pan) & Vertical (tilt) movements. 20X-30X optical zoom. Programmable patrol preset points. Outdoor housing with  "Ingress Protection" rating of IP66/IP67 (dust & water resistant). Wall-mount/ceiling-mount		
+		</p>
+		</div>
+		
+		<div class="myimg">
+			<img src="img/Security/Cameras/ptzspeeddome-IR.png" style="height:200px">
+		</div>
+		<div>
+		<h3 class="heading">
+			PAN-TILT-ZOOM(PTZ) INFRA-RED(IR) SPEED DOME CAMERA
+		</h3>
+		<p class="para">
+			Long range infra-red illuminator (LED). High speed motor for Horizontal (pan) & Vertical (tilt) movements. 20X-30X optical zoom. Programmable patrol preset points. Outdoor housing with "Ingress Protection" rating of IP66/IP67 (dust & water resistant). Wall-mount/ceiling-mount 
+		</p>
+		</div>
+		
+		<div class="myimg">
+			<img src="img/Security/Cameras/ptz.png" style="height:200px">
+		</div>		
+		<div>
+		<h3 class="heading">
+			PAN-TILT-ZOOM(PTZ) INFRA-RED(IR) CAMERA
+		</h3>
+		<p class="para">
+			High speed motor for Horizontal (pan) & vertical (tilt) movements. Inbuilt memory slot for backup. Cloud storage for more storage. Connect to internet and view from anywhere.
+		</p>		
+		</div>
+		
+		<div class="myimg">
+			<a href="Brochure/YeshivaSystems-CompanyProfile-Security.pdf" download><img src="img/PDF.png" style="height:100px"></a>
+		</div>
+		<div>
+		<h3 class="heading">DOWNLOAD BROCHURE</h3>
+		<p class="para"></p>
+		</div>
+
+		</div><!-- camera div -->
+		</div>
+
+		
+    </div>
+
+
+
+ <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- <img src="https://media.gettyimages.com/photos/portrait-of-a-fresh-and-lovely-woman-picture-id514830078?s=612x612" /> -->
+  <img class="modal-content" id="img01">
+  <!-- <img src="img/loader.gif" /> -->
+</div>
+
+
+<!-- <div class="section" style="padding-left: 20px"> -->
+<!-- <h4>Actual site images</h4> -->
+<!-- </div> -->
+
+<div class="masonry1 " id="divimage" ></div>
+
+
+</body>
+
+
+<script>
+
+displayImages('divCamera',4,"img/Security/Cameras/");
+displayImages('divHomeAutomation',1,"img/Security/HomeAutomation/");
+
+displayImages('divX-Ray',2,"img/Security/X-RAY INSPECTION/");
+displayImages('divBiometrics',2,"img/Security/Biometrics/");
+displayImages('divFullStiles',2,"img/Security/FullStiles/");
+displayImages('divOthers',4,"img/Security/Others/");
+
+function displayImages(divid,imgcount,path)
+{
+var divimage = document.getElementById(divid);
+var d=divimage.innerHTML;
+for(i = 1; i <= imgcount; i++){
+	images = path+i+".jpg";
+	var s='<div class="item"><img style="width:150px;" class="clsimg" src="'+images+'" /></div>'
+	d=d+s
+}
+divimage.innerHTML=d;
+}
+</script>
+
+<!-- IMPORTANT PALCE SCRIPT AT END ELSE IT WILL NOT WORK -->
+<script src="js/mansory.js"></script>
+
+<script src="js/nav.jquery.min.js"></script>
+<script>
+    $('.nav').nav();
+</script>
+
+<script>
+	$( "#cctvcollapse" ).accordion({
+		collapsible: true,
+		active: false
+	});
+	
+  </script>
+
+</html>
